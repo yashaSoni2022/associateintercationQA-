@@ -1,0 +1,35 @@
+.sideBar {
+  max-width: 6vw;
+  min-width: 3vw;
+  min-height: 89.4vh;
+  float: left;
+  background-color: var(--clr-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+
+.expanded {
+  max-width: 20%;
+  min-height: 88.4vh;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 0px 4em 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+  width: 80%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
