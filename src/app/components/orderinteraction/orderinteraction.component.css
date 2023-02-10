@@ -1,0 +1,92 @@
+.card{
+    box-sizing: border-box;
+    position: absolute;
+    width: 709px;
+    height: 400px;
+    left: 380px;
+    top: 150px;
+    background: #FFFFFF;
+    border: 3px solid #0C747E;
+    border-radius: 20px;
+}
+
+.card-header{
+    position: absolute;
+    left: 380px;
+    top: 150px;
+    width: 720px;
+    height: 35px;
+    background: #0C747E;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.header-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+
+span {
+    margin-left: 18rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+span img {
+    margin-left: 10px;
+    /* font-size: 10px; */
+}
+
+.prompt {
+    box-sizing: border-box;
+    position: absolute;
+    width: 658px;
+    height: 31px;
+    left: 410px;
+    top: 202px;
+    border: 1px solid #095057;
+}
+
+.left{
+    box-sizing: border-box;
+    position: absolute;
+    width: 304px;
+    height: 232px;
+    left: 400px;
+    top: 250px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.right{
+    box-sizing: border-box;
+    position: absolute;
+    width: 304px;
+    height: 232px;
+    left: 772px;
+    top: 250px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
