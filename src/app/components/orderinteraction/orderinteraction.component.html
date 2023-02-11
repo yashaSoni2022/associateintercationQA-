@@ -1,5 +1,5 @@
 <!-- 1st Screen -->
-<div class="container" *ngIf="Condition1">
+<div class="container" *ngIf="Condition1" ng-app="">
    <div class="card" style="width: 45rem;"></div>
    <div class="card-header">
       <p class="header-title">ORDER-INTERACTION
@@ -8,7 +8,7 @@
    <div class="card-body">
       <div class="row mt-1">
          <!-- <p> -->
-         <input type="text" placeholder="Define Prompt"  class="prompt">
+         <input type="text" name="inputprompt" placeholder="Define Prompt" class="prompt" ng-model="inputprompt" [style]="styleOne && {'font-weight':'bold'} || styleTwo && {'font-style':'italic'} || styleThree && {'text-decoration': 'underline'} || styleFour && {'text-align':'left'} || styleFive && {'text-align':'right'}">
          <!-- </p> -->
       </div>
       <div class="left">
@@ -65,11 +65,11 @@
          </p>
 
          <div class="symbol">
-         <a type="button"><img src="./assets/Icons/bita.png" height="20px"></a>
+         <a type="button" (click)="boldText()"><img src="./assets/Icons/bita.png" height="20px"></a>
          <img src="./assets/Icons/Line 12.png" height="20px">
-         <a type="button"><img src="./assets/Icons/italic.png" height="20px"></a>
+         <a type="button" (click)="italicText()"><img src="./assets/Icons/italic.png" height="20px"></a>
          <img src="./assets/Icons/Line 12.png" height="20px">
-         <a type="button"><img src="./assets/Icons/underline.png" height="20px"></a>
+         <a type="button" (click)="underlineText()"><img src="./assets/Icons/underline.png" height="20px"></a>
          <img src="./assets/Icons/Line 12.png" height="20px">
          <a type="button"><img src="./assets/Icons/icon5.png" height="20px"></a>
          <img src="./assets/Icons/Line 12.png" height="20px">
@@ -89,9 +89,9 @@
          <img src="./assets/Icons/Line 12.png" height="20px">
          <a type="button"><img src="./assets/Icons/normal.png" height="20px"></a>
          <img src="./assets/Icons/Line 7.png" height="30px">
-         <a type="button"><img src="./assets/Icons/dash1.png" height="20px"></a>
+         <a type="button" (click)="Dash1()"><img src="./assets/Icons/dash1.png" height="20px"></a>
          <img src="./assets/Icons/Line 12.png" height="20px">
-         <a type="button"><img src="./assets/Icons/dash2.png" height="20px"></a>
+         <a type="button" (click)="Dash2()"><img src="./assets/Icons/dash2.png" height="20px"></a>
          <img src="./assets/Icons/Line 12.png" height="20px">
          <a type="button"><img src="./assets/Icons/icon7.png" height="30px"></a>
          <a type="button"><img src="./assets/Icons/arrow.png" height="20px"></a>
@@ -111,13 +111,14 @@
 <div class="content2" *ngIf="Condition2">
    <div class="card-header-1">
       <p class="header-title">ORDER-INTERACTION
-         <span>QUESTION  | RESPONSE | <a type="button"><img src="./assets/delete.png"></a></span></p>
+         <span>QUESTION  | RESPONSE | <a type="button" (click)="invisiblebox()"><img src="./assets/delete.png"></a></span></p>
    </div>
    <div class="card-body">
       <div class="row mt-1">
-         <p class="prompt-1">
+         <p class="prompt-1" ng-bind="inputprompt">
             <img src="./assets/Icons/symbol.png" class="isymbol">
-            Please define the correct order in the box to the right</p>
+            Please define the correct order in the box to the right
+         </p>
       </div>
       <div class="left-1">
          <ul style="list-style-type: none;">

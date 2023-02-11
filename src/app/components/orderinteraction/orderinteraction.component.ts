@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./orderinteraction.component.css']
 })
 export class OrderinteractionComponent {
+  inputprompt="";
   Condition1: boolean = true;
   autosave: boolean = true;
   bottomSymbol:boolean=true;
@@ -20,6 +21,11 @@ export class OrderinteractionComponent {
   choice2:boolean=true;
   choice3:boolean=true;
   choice4:boolean=false;
+  styleOne: boolean = false;
+  styleTwo: boolean = false;
+  styleThree: boolean = false;
+  styleFour: boolean = false;
+  styleFive: boolean = false;
 
   screen2(){
     this.Condition1=false;
@@ -34,6 +40,10 @@ export class OrderinteractionComponent {
   screen3(){
     this.Condition2=false;
     this.Condition3=true;
+  }
+
+  invisiblebox(){
+    this.Condition2=false;
   }
 
   deleteicon1(){
@@ -69,5 +79,35 @@ export class OrderinteractionComponent {
       this.delete4=true;
       this.choicebox=false;
       this.choice4=true;
+  }
+
+  boldText(){
+    this.styleOne=true;
+  }
+
+  italicText(){
+    this.styleTwo=true;
+    this.styleOne=false;
+  }
+
+  underlineText(){
+    this.styleThree=true;
+    this.styleTwo=false;
+    this.styleOne=false;
+  }
+
+  Dash1(){
+    this.styleFour=true;
+    this.styleThree=false;
+    this.styleTwo=false;
+    this.styleOne=false;
+  }
+
+  Dash2(){
+    this.styleFive=true;
+    this.styleFour=false;
+    this.styleThree=false;
+    this.styleTwo=false;
+    this.styleOne=false;
   }
 }
