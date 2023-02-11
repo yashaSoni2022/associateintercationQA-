@@ -9,11 +9,17 @@ export class OrderinteractionComponent {
   Condition1: boolean = true;
   autosave: boolean = true;
   bottomSymbol:boolean=true;
-  delete1=true;
-  delete2=true;
-  delete3=true;
+  delete1:boolean=true;
+  delete2:boolean=true;
+  delete3:boolean=true;
+  choicebox:boolean=true;
+  delete4:boolean=false;
   Condition2: boolean = false;
   Condition3: boolean = false;
+  choice1:boolean=true;
+  choice2:boolean=true;
+  choice3:boolean=true;
+  choice4:boolean=false;
 
   screen2(){
     this.Condition1=false;
@@ -32,14 +38,22 @@ export class OrderinteractionComponent {
 
   deleteicon1(){
     this.delete1=false;
+    this.choice1=false;
   }
 
   deleteicon2(){
     this.delete2=false;
+    this.choice2=false;
   }
 
   deleteicon3(){
     this.delete3=false;
+    this.choice3=false;
+  }
+
+  deleteicon4(){
+    this.delete4=false;
+    this.choice4=false;
   }
 
   dismiss(){
@@ -49,5 +63,11 @@ export class OrderinteractionComponent {
   dismissbox(){
     this.Condition1=false;
     this.autosave=false;
+  }
+
+  addChoice(){
+      this.delete4=true;
+      this.choicebox=false;
+      this.choice4=true;
   }
 }

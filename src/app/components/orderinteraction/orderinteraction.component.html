@@ -34,8 +34,16 @@
                <img src="./assets/deletegreen.png" class="deleteicon">
             </a>
             </li>
+
+            <li *ngIf="delete4">
+               <img src="./assets/Icons/ellipse.png">
+               Choice 4
+            <a (click)="deleteicon4()">
+               <img src="./assets/deletegreen.png" class="deleteicon">
+            </a>
+            </li>
          </ul>
-         <a type="button" class="choice"><img src="./assets/Icons/add.png" height="12px"> Add
+         <a type="button" class="choice" *ngIf="choicebox" (click)="addChoice()"><img src="./assets/Icons/add.png" height="12px"> Add
             Choice</a>
          </div>
       <div class="right">
@@ -96,7 +104,7 @@
 <img src="./assets/Vector.png" class="autosave1" *ngIf="autosave">
 </a>
 
-
+<img id="saveButton" src="assets/SaveButton.png" alt="">
 
 
 <!-- 2nd Screen -->
@@ -113,17 +121,21 @@
       </div>
       <div class="left-1">
          <ul style="list-style-type: none;">
-            <li>
+            <li *ngIf="choice1">
                <img src="./assets/Icons/shadedrectangle.png" class="shadedrectangle">
                CHOICE 1
             </li>
-            <li>
+            <li *ngIf="choice2">
                <img src="./assets/Icons/shadedrectangle.png" class="shadedrectangle">
                CHOICE 2
             </li>
-            <li>
+            <li *ngIf="choice3">
                <img src="./assets/Icons/shadedrectangle.png" class="shadedrectangle">
                CHOICE 3
+            </li>
+            <li *ngIf="choice4">
+               <img src="./assets/Icons/shadedrectangle.png" class="shadedrectangle">
+               CHOICE 4
             </li>
          </ul>
       </div>
@@ -145,17 +157,21 @@
    <div class="card-body">
       <div class="left-1">
          <ul style="list-style-type: none;">
-            <li>
+            <li *ngIf="choice1">
                <img src="./assets/Icons/shadedrectangle.png" class="shadedrectangle">
                CHOICE 1
             </li>
-            <li>
+            <li *ngIf="choice2">
                <img src="./assets/Icons/shadedrectangle.png" class="shadedrectangle">
                CHOICE 2
             </li>
-            <li>
+            <li *ngIf="choice3">
                <img src="./assets/Icons/shadedrectangle.png" class="shadedrectangle">
                CHOICE 3
+            </li>
+            <li *ngIf="choice4">
+               <img src="./assets/Icons/shadedrectangle.png" class="shadedrectangle">
+               CHOICE 4
             </li>
          </ul>
       </div>
