@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./orderinteraction.component.css']
 })
 export class OrderinteractionComponent {
-  inputprompt="";
+  savebtn:boolean=true;
+  savebtn1:boolean=false;
   Condition1: boolean = true;
   autosave: boolean = true;
   bottomSymbol:boolean=true;
@@ -35,11 +36,15 @@ export class OrderinteractionComponent {
     this.delete3=false;
     this.bottomSymbol=false;
     this.Condition2=true;
+    this.savebtn=false;
+    this.savebtn1=true;
   }
 
   screen3(){
     this.Condition2=false;
     this.Condition3=true;
+    this.savebtn=false;
+    this.savebtn1=true;
   }
 
   invisiblebox(){
