@@ -7,9 +7,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { OrderinteractionComponent } from './components/orderinteraction/orderinteraction.component';
+import { AdminHoverCardComponent } from './components/admin-hover-card/admin-hover-card.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SideBarComponent, OrderinteractionComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    SideBarComponent,
+    AdminHoverCardComponent,
+    OrderinteractionComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

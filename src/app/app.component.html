@@ -9,14 +9,29 @@
 </head>
 
 <body>
+
   <app-header></app-header>
   <app-side-bar></app-side-bar>
+  <!-- **interactions component go here -->
+
   <app-orderinteraction></app-orderinteraction>
-  <!-- <img id="saveButton" src="assets/SaveButton.png" alt=""> -->
-  <img class="options" src="assets/burger.png" alt="">
-  <img class="options" src="assets/printer.png" alt="">
-  <img class="options" src="assets/view.png" alt="">
-  
+
+  <!-- interactions component go here  -->
+  <div class="options-container">
+    <div id="printViewBurger">
+      <div>
+        <img class="options" src="assets/view.png" alt="">
+        <img class="options" src="assets/printer.png" alt="">
+        <img (click)="openBurgerMenu()" class="options" src="assets/burger.png" alt="">
+      </div>
+
+      <app-admin-hover-card></app-admin-hover-card>
+
+    </div>
+
+
+  </div>
+  <img id="saveButton" src="assets/SaveButton.png" alt="">
 </body>
 
 </html>

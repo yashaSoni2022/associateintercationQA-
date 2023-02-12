@@ -4,16 +4,19 @@
   --clr-light: #FFFFFF;
   --clr-medium: #83C5BE;
   --clr-dark: #0C747E;
-  --clr-white:#fff;
+  --clr-white: #fff;
   font-family: Roboto;
+
+
 }
 
 html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  height: 100vh;
   max-width: 100%;
+  font-family: Roboto;
 }
 
 button {
