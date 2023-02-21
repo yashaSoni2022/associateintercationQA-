@@ -2,11 +2,11 @@ import { Element } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-Orderinteraction',
-  templateUrl: './Orderinteraction.component.html',
-  styleUrls: ['./Orderinteraction.component.css']
+  selector: 'app-association-interaction',
+  templateUrl: './association-interaction.component.html',
+  styleUrls: ['./association-interaction.component.css']
 })
-export class OrderinteractionComponent {
+export class AssociationInteractionComponent {
   savebtn: boolean = true;
   savebtn1: boolean = false;
   Condition1: boolean = true;
