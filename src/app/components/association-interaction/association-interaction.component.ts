@@ -100,7 +100,6 @@ export class AssociationInteractionComponent {
           id: last.id + 1
         })
       }
-      console.log(last.id)
     }
     else
     {
@@ -144,6 +143,15 @@ export class AssociationInteractionComponent {
 
   deleteChoice(id: any) {
     this.choices = this.choices.filter(item => item.id !== id)
+  }
 
+  radioChecked(id:any){
+    this.choices.forEach( element => {
+      if(element.id != id){
+        element.selected = false;
+      } else {
+        element.selected = true;
+      }
+    });
   }
 }

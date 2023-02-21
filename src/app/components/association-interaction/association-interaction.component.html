@@ -10,7 +10,7 @@
       <div class="border-box">
          <div class="choice-box">
             <div *ngFor='let item of choices;let i = index'>
-               <input type="radio" [checked]="item.selected">
+               <input type="radio" [checked]="item.selected"  (change)="radioChecked(item.id)">
                <input type="text" value='{{item.name}}' />
                <span (click)="deleteChoice(item.id)" class="trash-span"><img src="assets/deletegreen.png"
                      class="trash-icon" alt=""></span>
@@ -106,7 +106,7 @@
       <div class="border-box2">
          <div class="choice-box">
             <div *ngFor='let item of choices;let i = index'>
-               <input type="radio" [checked]="item.selected">
+               <input type="radio" [checked]="item.selected"   (change)="radioChecked(item.id)">
                <input type="text" value='{{item.name}}' />
                <span (click)="deleteChoice(item.id)" class="trash-span"><img src="assets/deletegreen.png"
                      class="trash-icon" alt=""></span>
@@ -141,7 +141,7 @@
       <div class="border-box3">
          <div class="choice-box">
             <div *ngFor='let item of choices;let i = index'>
-               <input type="radio" [checked]="item.selected">
+               <input type="radio" [checked]="item.selected"   (change)="radioChecked(item.id)">
                <input type="text" value='{{item.name}}' />
                <span (click)="deleteChoice(item.id)" class="trash-span"><img src="assets/deletegreen.png"
                      class="trash-icon" alt=""></span>
