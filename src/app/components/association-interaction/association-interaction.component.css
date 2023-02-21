@@ -389,6 +389,7 @@ cursor: pointer;
 
 .trash-icon {
     margin-bottom: 8px;
+    cursor: pointer;
 }
 
 .trash-span {
